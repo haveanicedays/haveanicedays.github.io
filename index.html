@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>OBLADAET HAPPY BIRTHDAY TOUR 2018</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-222495-7JgrQ';</script>
 	<!-- Facebook Pixel Code -->
 <script>
@@ -33,6 +34,7 @@
 <body>
     <div class="wrapper">
         <div class="bl-1" id="bl1">
+        
             <div class="zagolovok"></div>
             <div class="container hidden-xs">
                
@@ -75,11 +77,6 @@
                         <div class="cit">
                             <p>Петрозаводск / Чебоксары / Минск /</p>
                         </div>
-<!--
-                        <div class="cit merc">
-                            <p id="blinkingText">Список будет пополняться</p>
-                        </div>
--->
                     </div>
                     <div class="logo">
                         <div class="lgbl blink"></div>
@@ -685,17 +682,16 @@
                                                         <a>Closed</a>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12 col-xs-12 databl closegor"> 
+                                                <div class="col-md-12 col-xs-12 databl"> 
                                                    
                                                     <div class="col-md-2 col-xs-2 dat">
                                                         <p>13/05</p>
                                                     </div>
                                                     <div class="col-md-4 col-xs-4 gor">
                                                         <p>Москва</p>
-                                                        <div class="soldout"><a>Sold out</a></div>
                                                     </div>
-                                                    <div class="col-md-6 col-xs-6 btno">
-                                                        <a>Closed</a>
+                                                    <div class="col-md-6 col-xs-6 buybt">
+                                                        <a href="https://vk.com/app6345024_-161444635" target="_blank">Купить</a>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12 col-xs-12 databl">
@@ -799,24 +795,237 @@
                 </div>
             </div>
         </div>
+        
+        
+        
+        <div class="bl-2">
+            <div class="headin col-xs-12">
+                <div class="in"></div>
+            </div>
+            <div class="citybl citybl1 hidden-xs">
+                <div class="cit">
+                    <p>Иркутск / Новосибирск /</p>
+                </div>
+                <div class="cit">
+                    <p>Липецк / Курск / Смоленск /</p>
+                </div>
+                <div class="cit">
+                    <p>Пенза / Казань / Владимир / Иваново /</p>
+                </div>
+                <div class="cit">
+                    <p>Ярославль / Сургут / Волгоград /</p>
+                </div>
+                <div class="cit">
+                    <p>Астрахань / Петербург / Москва /</p>
+                </div>
+                <div class="cit">
+                    <p>Рига / Таллин / Калининград / </p>
+                </div>
+                <div class="cit">
+                    <p>Нижний Новгород / Киев / Харьков /</p>
+                </div>
+                <div class="cit">
+                    <p>Петрозаводск / Чебоксары / Минск /</p>
+                </div>
+    
+                <div class="cit merc blink">
+                    <p id="blinkingText">Список будет пополняться</p>
+                </div>
+    
+            </div>
+            <div class="mapp">
+                <div class="mapbg">
+                    <div id="map" style="width: 100%; height: 100%"></div>
+                </div>
+            </div>
+        </div>
     </div>
-   
+    
+    
+    <div class="bl-3">
+        <div class="container">
+            <div class="row">
+                <div class="headint">
+                   <a href="https://vk.com/killmeobladaet" class="int" target="_blank"></a>
+               </div>
+            </div>
+            <div class="twotwn hidden-xs">
+                <div class="twow">
+                    <div class="spb">
+                        <a href="https://kharkov.internet-bilet.ua/OBLADAET" target="_blank">Купить</a>
+                    </div>
+                    <div class="msk">
+                        <a href="https://kharkov.internet-bilet.ua/OBLADAET" target="_blank">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist col-xs-12">
+              <script type="text/javascript" src="https://vk.com/js/api/openapi.js?154"></script>
+
+            <!-- VK Widget -->
+                <div id="vk_playlist_-57310257_5"></div>
+                <script type="text/javascript">
+                VK.Widgets.Playlist('vk_playlist_-57310257_5', -57310257, 5, '00ba9d018ebd05bf48');
+            </script>  
+            </div>
+            
+     
+    
 <!--js-->
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.min.js"></script>
-<!--
-    <script type="text/javascript">
-        $('.btbt').mouseover(function(){
-            $(this).removeClass('merc1');
+
+
+
+<!--Карта!!!-->
+<script type="text/javascript">
+  ymaps.ready(init);
+    var myMap,
+        moscow,
+        spb,
+        irk,
+        ast,
+        kal,
+        bb,
+        cc,
+        dd,
+        ff,
+        kiv;
+
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [59.696892, 70.807200],
+            zoom: 3
         });
 
-        $('.btbt').mouseleave(function(){
-            $(this).addClass('merc1');
+        moscow = new ymaps.Placemark([55.76, 37.64], {
+            hintContent: 'Москва!', 
+            balloonContent: 'Клуб Центр' 
+        }, 
+        {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
         });
-    </script>
--->
+        myMap.geoObjects.add(moscow);
+        
+        spb = new ymaps.Placemark([59.937610, 30.319794], { 
+            hintContent: 'Санкт-Петербург!', 
+            balloonContent: 'Клуб Гараж' 
+        },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
+        });
+        myMap.geoObjects.add(spb);
+        
+        irk = new ymaps.Placemark([52.286387, 104.280660], { 
+            hintContent: 'Иркутск!', 
+            balloonContent: 'Клуб Иркутск-холл' 
+        },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
+        });
+        myMap.geoObjects.add(irk);
+        
+        nsb = new ymaps.Placemark([55.030199, 82.920430], { 
+            hintContent: 'Новосибирск!', 
+            balloonContent: 'Клуб НСБ' 
+        },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
+        });
+        myMap.geoObjects.add(nsb);
+        
+        ast = new ymaps.Placemark([46.347869, 48.033574], { 
+            hintContent: 'Астрахань!', 
+            balloonContent: 'Клуб Речной' 
+        },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
+        });
+        myMap.geoObjects.add(ast);
+        
+        kal = new ymaps.Placemark([54.707390, 20.507307], { 
+            hintContent: 'Калининград!', 
+            balloonContent: 'Клуб Old Town' 
+        },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
+        });
+        myMap.geoObjects.add(kal);
+        
+        kiv = new ymaps.Placemark([50.450458, 30.523460], { 
+            hintContent: 'Киев!', 
+            balloonContent: 'Клуб Перемога' 
+        },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
+        });
+        myMap.geoObjects.add(kiv);
+        
+        bb = new ymaps.Placemark([67.269182, 79.772044], { 
+            hintContent: 'Киев!', 
+            balloonContent: 'Клуб Перемога' 
+        },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
+        });
+        myMap.geoObjects.add(bb);
+        
+        cc = new ymaps.Placemark([69.286416, 126.002513], { 
+            hintContent: 'Киев!', 
+            balloonContent: 'Клуб Перемога' 
+        },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
+        });
+        myMap.geoObjects.add(cc);
+        
+        dd = new ymaps.Placemark([68.462192, 50.943919], { 
+            hintContent: 'Киев!', 
+            balloonContent: 'Клуб Перемога' 
+        },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
+        });
+        myMap.geoObjects.add(dd);
+        ff = new ymaps.Placemark([63.697022, 52.525950], { 
+            hintContent: 'Киев!', 
+            balloonContent: 'Клуб Перемога' 
+        },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [30, 30],
+            iconImageOffset: [0, 0],
+        });
+        myMap.geoObjects.add(ff);
+    }
+</script>
 
+
+
+<!--Мигающий текст!!!-->
  <script type="text/javascript">
     function blink(selector) {
     $(selector).fadeOut('slow',function() {
