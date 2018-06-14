@@ -1,0 +1,1825 @@
+@font-face { 
+    font-family: Helv; 
+    src: url(../font/HelveticaNeueCyr-Black.otf); 
+}
+@font-face { 
+    font-family: HelvL; 
+    src: url(../font/HelveticaNeueCyr-Light.ttf); 
+}
+@font-face { 
+    font-family: HelvB; 
+    src: url(../font/HelveticaNeueCyr-Bold.ttf); 
+}
+@font-face { 
+    font-family: fafa; 
+    src: url(../font-awesome/fontawesome-webfont.ttf); 
+}
+
+
+* {
+    transform: all 1s;
+}
+.wrapper {
+    width: 100%;
+    background-color: #121212;
+}
+.bl-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg3.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+.bl-1 .zagolovok {
+    width: 103%;
+    height: 29%;
+    font-family: "Helv";
+    font-size: 25rem;
+    text-align: center;
+    padding: 0;
+    color: #f1f1f1;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    top: -6%;
+    left: -3%;
+    background-image: url(../img/text.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.bl-1 .container {
+    position: relative;
+    top: -7%;
+    width: 100%;
+/*    height: 59%;*/
+    margin: 0;
+    
+}
+.bl-1 .col-md-4 {
+    padding: 0;
+}
+.photo {
+    width: 25%;
+    height: 350px;
+    background-image: url(../img/photo1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    margin-top: 1%;
+}
+.tt {
+    width: 40%;
+    height: 350px;
+}
+.tt .tour{
+    color: #f1f1f1;
+    font-family: "Helv";
+    font-size: 5rem;
+    text-align: right;
+    width: 95%;
+    height: 70px;
+    background-image: url(../img/tour.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right;
+    position: absolute;
+    z-index: 2;
+}
+.tour h2 {
+    visibility: hidden;
+}
+
+
+
+.zir {
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    top: 10%;
+}
+.loader{
+    -webkit-animation: preloader 1.5s infinite linear;
+    -moz-animation: preloader 1.5s infinite linear;
+    -ms-animation: preloader 1.5s infinite linear;
+    -o-animation: preloader 1.5s infinite linear;
+    animation: preloader 20s infinite linear;
+}
+
+@-webkit-keyframes preloader {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes preloader {
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-ms-keyframes preloader {
+    to { -ms-transform: rotate(360deg); }
+}
+
+@-o-keyframes preloader {
+    to { -o-transform: rotate(360deg); }
+}
+
+@keyframes preloader {
+    to { transform: rotate(360deg); }
+}
+
+
+
+
+
+.headint {
+    width: 100%;
+    height: 30px;
+}
+.headint .int {
+    width: 10%;
+    height: 100%;
+    background-image: url(../img/logored.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.headint .int:hover {
+    background-image: url(../img/logowhite.png);
+}
+.headin {
+    width: 100%;
+    height: 75px;
+}
+.headin .in {
+    width: 30%;
+    height: 100%;
+    background-image: url(../img/text3.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.texttour {
+    position: absolute;
+    top: 26%;
+    z-index: 2;
+    font-family: "HelvB";
+    font-size: 1rem;
+/*    color: #f1f1f1;*/
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.logo {
+    position: absolute;
+    bottom: -22%;;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+}
+.lgbl {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 107%;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.tour h2 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+}
+.citybl {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    top: 67%;
+    text-align: right;
+    text-transform: uppercase;
+}
+.cit {
+    width: 100%;
+    position: relative;
+}
+.cit p {
+    margin-bottom: 0%;
+    margin-right: 0;
+    color: #f1f1f1;
+    font-family: "HelvB";
+    font-size: 1.5rem;
+}
+.merc {
+    height: 30px;
+}
+.merc p {
+    color: #f9251c;
+}
+.bl-1 .bt {
+    width: 100%;
+    height: 9%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.bl-1 .bt a {
+    text-align: center;
+    color: #f1f1f1;
+    font-family: "Helv";
+    font-size: 3rem;
+    text-decoration: none;
+    transition: 0.2s linear;
+    
+/*    border: 2px solid rgba(0, 0, 0, 0);*/
+}
+.bl-1 .bt a:hover {
+    text-decoration: none;
+    color: #f9251c;
+/*    border: 2px solid #f9251c;*/
+}
+.bt a:focus {
+    border: none;
+}
+.modalred h1{
+    font-family: "Helv";
+    font-size: 1.5rem;
+    color: #f9251c;
+    text-align: center;
+    height: 0%;
+}
+.modalwhite h2 {
+    text-align: center;
+    font-family: "Helv";
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-right: 4%;
+}
+.modal-dialog {
+    width: 100%;
+}
+.modal-content {
+    background-image: url(../img/bg2.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    border-radius: 0;
+    margin-top: 2%;
+/*    border: none!important;*/
+}
+.modal-header {
+    border: none;
+    margin-bottom: 1%;
+}
+.modal-header .close {
+    color: #fff;
+    font-family: "Helv";
+    font-size: 2.5rem;
+    text-shadow: none;
+    opacity: 1;
+}
+.modal-header .close:hover {
+    color: #f9251c;
+}
+.modal-body {
+    padding-bottom: 2%;
+}
+.item .line {
+    width: 1px;
+    height: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.databl {
+    margin-bottom: 1.5%;
+}
+.dat {
+    color: #fff;
+    text-align: right;
+    padding-right: 5%;
+    font-family: "Helv";
+    font-size: 1.7rem;
+}
+.dat p {
+    margin-bottom: 0;
+    line-height: 165%;
+}
+.gor {
+    color: #fff;
+    text-align: left;
+    font-family: "Helv";
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.buybt {
+    width: 17%;
+    height: 10%;
+/*    background-color: #f9251c;*/
+    color: #fff;
+/*    border: 2px solid #f9251c;*/
+    font-family: "Helv";
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.buybt:hover {
+    color: #f9251c;
+/*    background-color: rgba(255, 255, 255, 0);*/
+}
+.buybt a {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s linear;
+    padding: 1% 18%;
+    background-color: #f9251c;
+    border: 2px solid #f9251c;
+}
+.btno {
+     width: 25%;
+    height: 10%;
+/*    background-color: #f9251c;*/
+    color: #fff;
+/*    border: 2px solid #f9251c;*/
+    font-family: "Helv";
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btno a {
+    cursor: default;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s linear;
+    padding: 1% 15%;
+    background-color: #909090;
+    border: 2px solid #909090;
+}
+.soldout {
+    width: 50%;
+    position: relative;
+    left: 10%;
+    z-index: 9993;
+    transform: rotate(10deg);
+    margin-top: 0%;
+}
+.gor p {
+    display: block;
+    position: absolute;
+    z-index: 9992;
+    
+}
+.soldout a {
+    padding: 0% 3%;
+    cursor: default;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Helv";
+    width: 100%;
+    height: 100%;
+    transition: 0.2s linear;
+    background-color: #909090;
+    border: 2px solid #909090;
+    
+    
+}
+.btno a:hover {
+    background-color: #909090!important;
+    border: 2px solid #909090!important;
+    color: #fff!important;
+    text-decoration: none;
+}
+.soldout a:hover {
+    background-color: #909090!important;
+    border: 2px solid #909090!important;
+    color: #fff!important;
+    text-decoration: none;
+}
+.closegor .dat p{
+    color: #909090!important;
+}
+.closegor .gor p{
+    color: #909090!important;
+}
+
+
+/*
+.buybt a:hover {
+    color: #f9251c;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+*/
+.buybt a:hover {
+    color: #f9251c;
+    text-decoration: none;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.carousel-indicators {
+    bottom: -20px;
+}
+.carousel-indicators .active {
+    background-color: #f9251c;
+}
+.rightbl {
+    border-left: 1px solid #fff;
+}
+.fa {
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+}
+.carousel-control:hover {
+    color: #f9251c;
+}
+.carousel-control {
+    background: none;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%)!important;
+    background-color: none;
+}
+.bt a {
+    padding: 10px 15px;
+    margin-right: 4%;
+}
+.social {
+    width: 100%;
+    height: 7%;
+}
+.socbl {
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+}
+.soc {
+    width: 12%;
+    height: 100%;
+    margin-right: 1%;
+    float: left;
+    padding-bottom: 10%;
+}
+.soc .fa {
+    font-size: 2rem;
+    position: relative;
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+.soc .fa:hover {
+    color: #f9251c;
+    text-decoration: none;
+}
+.sc {
+    margin-left: 9%;
+}
+.merc1 {
+    animation: blink 500ms alternate infinite;
+}
+@keyframes blink {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #f9251c;
+  }
+}
+
+.mobbt {
+    display: none;
+}
+.zir1 {
+    display: none;
+}
+.tourr {
+    display: none;
+}
+.sociall {
+    display: none;
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .bl-1 {
+        background-size: 120%;
+    }
+    .logo {
+        bottom: -10%;
+    }
+    .citybl {
+        margin-top: 10%!important;
+    }
+    .cit p {
+        font-size: 1rem!important;
+    }
+    .bt {
+       position: absolute;
+        bottom: 10%;
+    }
+}
+@media screen and (min-device-width: 1000px) and (max-device-width: 1351px) {
+    .bl-1 {
+        
+        background-size: 110%;
+    }
+    .modal-content {
+        background-size: 150%;
+    }
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1050px) {
+    .bl-1 {
+        background-size: 135%;
+    }
+    .social {
+        position: absolute;
+        bottom: 0;
+    }
+    .bt {
+        position: absolute;
+        bottom: 3%;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1300px) {
+    .bl-1 {
+        background-size: 150%!important;
+    }
+    .social {
+        position: absolute;
+        bottom: 0;
+    }
+    .bt {
+        position: absolute;
+        bottom: 3%;
+    }
+    .photo {
+        height: 50vh!important;
+    }
+}
+@media screen and (min-width: 1700px) /* Desktop */ {
+    .bl-1 .zagolovok {
+        width: 103%;
+        height: 29%!important;
+        font-family: "Helv";
+        font-size: 25rem;
+        text-align: center;
+        padding: 0;
+        color: #f1f1f1;
+        margin: 0;
+        text-transform: uppercase;
+        position: relative;
+        top: -6%;
+        left: -3%;
+        background-image: url(../img/text.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .soldout {
+        width: 50%;
+        position: relative;
+        left: 5%;
+        z-index: 9993;
+        transform: rotate(10deg);
+        margin-top: 0%;
+    }
+    .bl-1 .container {
+        position: relative;
+        top: -10%;
+        width: 100%;
+        margin: 0;
+    }
+    .tt .tour {
+        height: 120px; 
+    }
+    .texttour {
+        position: absolute;
+        top: 32%;
+        z-index: 2;
+        font-family: "HelvB";
+        font-size: 1.5rem;
+        color: #f1f1f1;
+    }
+    .headint {
+        width: 100%;
+        height: 40px;
+    }
+    .headint .int {
+        width: 10%;
+        height: 100%;
+        background-image: url(../img/logored.png);
+        background-repeat: no-repeat;
+        background-size: 65%;
+        background-position: center;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    
+    .headin {
+        width: 100%;
+        height: 110px;
+    }
+    .headin .in {
+        width: 40%;
+        height: 100%;
+        background-image: url(../img/text3.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        margin: 0 auto;
+    }
+    .bl-1 .zagolovok {
+        width: 103%;
+        height: 35%;
+        font-family: "Helv";
+        font-size: 25rem;
+        text-align: center;
+        padding: 0;
+        color: #f1f1f1;
+        margin: 0;
+        text-transform: uppercase;
+        position: relative;
+        top: -6%;
+        left: -3%;
+        background-image: url(../img/text.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .modalwhite h2 {
+        text-align: center;
+        font-family: "Helv";
+        font-size: 2rem;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 0;
+        padding-right: 1%;
+    }
+    .modal-content {
+        margin-top: 5%;
+    }
+    .modal-body {
+        padding-bottom: 4%;
+    }
+    h2, .h2 {
+        font-size: 30px;
+    }
+    .photo {
+        width: 25%;
+        height: 475px;
+        background-image: url(../img/photo1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+        margin-top: 1.5%;
+    }
+    .citybl {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+/*        bottom: -25%;*/
+        top: 97%;
+        text-align: right;
+        text-transform: uppercase;
+    }
+    .logo {
+        position: absolute;
+        bottom: -55%;
+        z-index: 2;
+        width: 100%;
+        height: 50px;
+    }
+    .buybt {
+        width: 12%;
+        height: 10%;
+/*        background-color: #f9251c;*/
+        color: #fff;
+/*        border: 2px solid #f9251c;*/
+        font-family: "Helv";
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 auto;
+    }
+    .zir img {
+        width: 150%;
+        height: 331%;
+    }
+    
+    .social {
+        width: 100%;
+        height: 7%;
+    }
+    .socbl {
+        width: 30%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .soc {
+        width: 12%;
+        height: 100%;
+        margin-right: 1%;
+        float: left;
+        padding-bottom: 10%;
+    }
+    .soc .fa {
+        font-size: 2rem;
+        position: relative;
+        color: #f0f0f0;
+        text-decoration: none;
+        transition: 0.2s linear;
+    }
+    .soc .fa:hover {
+        color: #f9251c;
+        text-decoration: none;
+    }
+    .sc {
+        margin-left: 9%;
+    }
+    .btno a {
+        padding: 1% 10%;
+    }
+    
+}
+@media screen and (min-width: 1920px) and (max-width: 2050px) {
+    .bl-1 {
+        background-size: 100%;
+    }
+}
+@media screen and (min-height: 1500px) {
+    .bl-1 {
+        background-size: 110%;
+    }
+    .social {
+        position: absolute;
+        bottom: 0;
+    }
+    .bt {
+        position: absolute;
+        bottom: 3%;
+    }
+    .photo {
+        height: 50vh!important;
+    }
+    .tour {
+        height: 10vh!important;
+    }
+    .texttour {
+        top: 50%!important;
+        font-size: 2rem!important;
+    }
+    .citybl {
+        top: 130%!important;
+    }
+    .cit p {
+        font-size: 2rem!important;
+    }
+    .merc {
+        font-size: 2rem!important;
+    }
+    .logo {
+        bottom: -106%!important;
+    }
+    .bt .a {
+        font-size: 4rem!important;
+    }
+    .soc .fa {
+        font-size: 4rem!important;
+    }
+}
+
+
+/*
+@media only screen 
+and (min-device-height :790px) 
+and (max-device-height : 830px) {
+        .bl-1 {
+            background-size: 400%!important;
+        }
+        .citybl, .logo {
+            display: block!important;
+        }
+        .bt {
+            bottom: 15%!important;
+        }
+        .social {
+            position: absolute;
+            bottom: -1%!important;
+        }
+        .mobbt {
+            display: block;
+            margin-top: 6%!important;
+        }
+        .mobbt .dat {
+            font-size: 2rem;
+        }
+        .mobbt .gor {
+            font-size: 2.3rem;
+        }
+        .mobbt .buybt {
+            font-size: 1.5rem;
+            margin-left: 2%;
+        }
+        .tourr {
+            top: 5vh!important;
+        }
+}
+*/
+
+
+/*Iphone 5*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+    .citybl {
+        top: 111%!important;
+    }
+    .texttour {
+        top: 33%!important;
+    }
+    .logo {
+        bottom: -55%!important;
+    }
+    .citybl, .logo {
+        display: none;
+    }
+} 
+
+/*Iphone 6*/
+@media only screen 
+and (min-device-height : 630px) 
+and (max-device-height : 736px) 
+and (orientation : portrait) {
+    .mobbt {
+        margin-top: 0%!important;
+    }
+    .tourr {
+        top: 7%!important;
+    }
+    .soldout a {
+        padding: 1% 11%!important;
+    }
+}
+@media only screen 
+and (min-device-height : 500px) 
+and (max-device-height : 570px) {
+    .tourr {
+        top: 9%!important;
+    }       
+}
+@media only screen 
+    and (min-device-height : 737px) {
+        .mobbt {
+            margin-top: 5%!important;
+        }
+        .tourr {
+            top: 4%!important;
+        }
+}
+
+
+@media only screen and (max-width: 660px) {
+    .bl-1 {
+/*
+        background-image: url(../img/bg2.png);
+        background-position: top left;
+*/
+        background-size: 430%;
+        height: 150vh;
+    }
+    
+    .bl-1 .zagolovok {
+        top: -1%;
+        background-size: 100%;
+        height: 15%; 
+        position: relative;
+    }
+    .photo {
+        background-position: center;
+        background-size: 50%;
+        width: 100%;
+        height: 600px;
+        display: none;
+    }
+    .tt {
+        width: 100%;
+        height: 675px;
+        margin-top: 24%;
+        display: none;
+    }
+    .tt .tour {
+        height: 115px;
+        background-size: 75%;
+    }
+    .tourr {
+        display: block;
+        position: fixed;
+        top: 1%!important;
+        
+        color: #f1f1f1;
+        font-family: "Helv";
+        font-size: 5rem;
+        text-align: right;
+        width: 95%;
+        height: 30%;;
+        background-image: url(../img/tour.png);
+        background-repeat: no-repeat;
+        background-size: 95%;
+        background-position: right;
+        position: absolute;
+        z-index: 0;
+    }
+    .zir {
+        
+        height: 400px;
+        position: absolute;
+        top: 52%;
+        left: 9%;
+        z-index: 0;
+    }
+    .zir1 {
+        display: block;
+    }
+    .zir img {
+        width: 390px;
+        height: 390px;
+    }
+    .texttour {
+        font-size: 2.5rem!important;
+        top: 17%;
+        padding: 1% 2.5%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    .lgbl {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        right: 0;
+        background-image: url(../img/logo.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 104%;
+    }
+    .bl-1 .bt a {
+        font-size: 5.3rem;
+    }
+    .modal-content {
+        background-position: center;
+        background-size: 220%;
+        margin-top: 20%;
+    }
+    .modal-body {
+        padding-bottom: 0%;
+        
+    }
+    .modalred h1 {
+        font-size: 5rem;
+    }
+    .modalwhite h2 {
+        font-size: 6rem;
+    }
+    .databl {
+        margin-bottom: 1%!important;
+    }
+    .rightbl .dat {
+        padding-left: 0;
+    }
+    .rightbl .buybt{
+        margin-left: 2%!important;
+        padding-left: 3%!important;
+    }
+    .dat {
+        color: #fff;
+        text-align: right;
+        padding-right: 5%;
+        font-family: "Helv";
+        font-size: 1rem;
+    }
+    .dat p {
+        line-height: 210%;
+    }
+    .gor {
+        color: #fff;
+        text-align: left;
+        font-family: "Helv";
+        font-size: 1rem;
+        padding-left: 5%;
+    }
+    .buybt {
+        width: 22%;
+        height: 10%;
+        color: #fff;
+        font-family: "Helv";
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .buybt:hover {
+        color: #f9251c;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .buybt a {
+        color: #fff;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+    }
+    .modal-header .close {
+        font-size: 8rem;
+        margin-right: 1%;
+    }
+    .cit p {
+        font-size: 2.5rem;
+    }
+    .headin {
+        width: 40%;
+        margin: 0 auto;
+        height: 115px;
+        background-color: rgba(0, 0, 0, 0.25);
+        display: none;
+    }
+    .headin .in {
+        width: 40%;
+        height: 100%;
+        background-image: url(../img/text3.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        margin: 0 auto;
+    }
+    .bl-1 .bt {
+        width: 100%;
+        height: 3%;
+        text-align: center;
+        letter-spacing: 2px;
+        display: none;
+    }
+    .socbl {
+        width: 75%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .sc {
+        margin-left: 10%;
+    }
+    .soc {
+        width: 12%;
+        height: 100%;
+        margin-right: 3%;
+        float: left;
+        padding-bottom: 0%;
+    }
+    .soc .fa {
+        font-size: 2rem;
+        position: relative;
+        color: #f0f0f0;
+        text-decoration: none;
+        transition: 0.2s linear;
+    }
+    .citybl {
+        top: 127%;
+        padding: 3% 2.5%;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 55%;
+        float: right;
+    }
+    .logo {
+        bottom: -70%;
+    }
+    .bt a {
+        padding: 10px 15px;
+        margin-right: -3%;
+    }
+    .social {
+        position: relative;
+        bottom: -1%;
+    }
+    .bt {
+        position: absolute;
+        bottom: 8%;
+    }
+    .modal-dialog {
+        margin: 0;
+    }
+    .modal-content {
+        background-size: 410%;
+        background-position: left;
+    }
+    .rightbl {
+        border: none;
+        padding-left: 20%;
+    }
+    .rightbl .buybt {
+        padding-left: 3%;
+    }
+    .left {
+        padding-right: 20%;
+    }
+    .mobbt {
+        position: relative;
+        display: block!important;
+        margin-top: -10%!important;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+    .social {
+        display: none;
+    }
+    .sociall {
+        display: block;
+        margin-top: 5%;
+    }
+    .btno {
+        font-size: 1rem;
+    }
+    .soldout {
+        left: 5%;
+    }
+    .soldout a {
+        font-size: 0.5rem;
+    }
+}
+@media only screen and (min-width: 661px) and (max-width: 767px) {
+    
+    .bl-1 {
+/*
+        background-image: url(../img/bg2.png);
+        background-position: top left;
+*/
+        background-size: 364%;
+        height: 150vh;
+    }
+    
+    .bl-1 .zagolovok {
+        top: -1%;
+        background-size: 100%;
+        height: 15%; 
+        position: relative;
+    }
+    .photo {
+        background-position: center;
+        background-size: 50%;
+        width: 100%;
+        height: 600px;
+        display: none;
+    }
+    .tt {
+        width: 100%;
+        height: 675px;
+        margin-top: 24%;
+        display: none;
+    }
+    .tt .tour {
+        height: 115px;
+        background-size: 75%;
+    }
+    .tourr {
+        display: block;
+        position: fixed;
+        top: 8%!important;
+        
+        color: #f1f1f1;
+        font-family: "Helv";
+        font-size: 5rem;
+        text-align: right;
+        width: 95%;
+        height: 30%;;
+        background-image: url(../img/tour.png);
+        background-repeat: no-repeat;
+        background-size: 95%;
+        background-position: right;
+        position: absolute;
+        z-index: 0;
+    }
+    .zir {
+        
+        height: 400px;
+        position: absolute;
+        top: 52%;
+        left: 9%;
+        z-index: 0;
+    }
+    .zir1 {
+        display: block;
+    }
+    .zir img {
+        width: 390px;
+        height: 390px;
+    }
+    .texttour {
+        font-size: 2.5rem!important;
+        top: 17%;
+        padding: 1% 2.5%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    .lgbl {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        right: 0;
+        background-image: url(../img/logo.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 104%;
+    }
+    .bl-1 .bt a {
+        font-size: 5.3rem;
+    }
+    .modal-content {
+        background-position: center;
+        background-size: 220%;
+        margin-top: 20%;
+    }
+    .modal-body {
+        padding-bottom: 0%;
+        
+    }
+    .modalred h1 {
+        font-size: 5rem;
+    }
+    .modalwhite h2 {
+        font-size: 6rem;
+    }
+    .databl {
+        margin-bottom: 1%!important;
+    }
+    .rightbl .dat {
+        padding-left: 0;
+    }
+    .rightbl .buybt{
+        margin-left: 1%!important;
+        padding-left: 3%!important;
+    }
+    .dat {
+        color: #fff;
+        text-align: right;
+        padding-right: 5%;
+        font-family: "Helv";
+        font-size: 1rem;
+    }
+    .dat p {
+        line-height: 210%;
+    }
+    .gor {
+        color: #fff;
+        text-align: left;
+        font-family: "Helv";
+        font-size: 1rem;
+        padding-left: 5%;
+    }
+    .buybt {
+        width: 22%;
+        height: 10%;
+        color: #fff;
+        font-family: "Helv";
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .buybt:hover {
+        color: #f9251c;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .buybt a {
+        color: #fff;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+    }
+    .modal-header .close {
+        font-size: 8rem;
+        margin-right: 1%;
+    }
+    .cit p {
+        font-size: 2.5rem;
+    }
+    .headin {
+        width: 40%;
+        margin: 0 auto;
+        height: 115px;
+        background-color: rgba(0, 0, 0, 0.25);
+        display: none;
+    }
+    .headin .in {
+        width: 40%;
+        height: 100%;
+        background-image: url(../img/text3.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        margin: 0 auto;
+    }
+    .bl-1 .bt {
+        width: 100%;
+        height: 3%;
+        text-align: center;
+        letter-spacing: 2px;
+        display: none;
+    }
+    .socbl {
+        width: 75%;
+        height: 180%;
+        margin: 0 auto;
+    }
+    .sc {
+        margin-left: 10%;
+    }
+    .soc {
+        width: 12%;
+        height: 100%;
+        margin-right: 3%;
+        float: left;
+        padding-bottom: 0%;
+    }
+    .soc .fa {
+        font-size: 2rem;
+        position: relative;
+        color: #f0f0f0;
+        text-decoration: none;
+        transition: 0.2s linear;
+    }
+    .citybl {
+        top: 127%;
+        padding: 3% 2.5%;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 55%;
+        float: right;
+    }
+    .logo {
+        bottom: -70%;
+    }
+    .bt a {
+        padding: 10px 15px;
+        margin-right: -3%;
+    }
+    .social {
+        position: relative;
+        bottom: -1%;
+    }
+    .bt {
+        position: absolute;
+        bottom: 8%;
+    }
+    .modal-dialog {
+        margin: 0;
+    }
+    .modal-content {
+        background-size: 410%;
+        background-position: left;
+    }
+    .rightbl {
+        border: none;
+        padding-left: 20%;
+    }
+    .rightbl .buybt {
+        padding-left: 3%;
+    }
+    .left {
+        padding-right: 20%;
+    }
+    .mobbt {
+        position: relative;
+        display: block!important;
+        margin-top: -10%!important;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+    .social {
+        display: none;
+    }
+    .sociall {
+        display: block;
+        margin-top: 5%;
+    }
+    .btno {
+        font-size: 1rem;
+    }
+    .soldout {
+        left: 5%;
+    }
+    .soldout a {
+        font-size: 0.5rem;
+    }
+}
+
+
+@media only screen and (max-device-width: 600px)  /* Mobile */ {
+    
+    
+    .bl-1 {
+/*
+        background-image: url(../img/bg2.png);
+        background-position: top left;
+*/
+        background-size: 364%;
+    }
+    
+    .bl-1 .zagolovok {
+        top: -1%;
+        background-size: 100%;
+        height: 15%; 
+        position: relative;
+    }
+    .photo {
+        background-position: center;
+        background-size: 50%;
+        width: 100%;
+        height: 600px;
+        display: none;
+    }
+    .tt {
+        width: 100%;
+        height: 675px;
+        margin-top: 24%;
+        display: none;
+    }
+    .tt .tour {
+        height: 115px;
+        background-size: 75%;
+    }
+    .tourr {
+        display: block;
+        position: absolute;
+        top: 9%;
+        
+        color: #f1f1f1;
+        font-family: "Helv";
+        font-size: 5rem;
+        text-align: right;
+        width: 95%;
+        height: 8%;;
+        background-image: url(../img/tour.png);
+        background-repeat: no-repeat;
+        background-size: 95%;
+        background-position: right;
+        position: absolute;
+        z-index: 0;
+    }
+    .zir {
+        height: 400px;
+        position: absolute;
+        top: 52%;
+        left: 9%;
+        z-index: 0;
+    }
+    .zir1 {
+        display: block;
+    }
+    .zir img {
+        width: 390px;
+        height: 390px;
+    }
+    .texttour {
+        font-size: 2.5rem!important;
+        top: 17%;
+        padding: 1% 2.5%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    .lgbl {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        right: 0;
+        background-image: url(../img/logo.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 104%;
+    }
+    .bl-1 .bt a {
+        font-size: 5.3rem;
+    }
+    .modal-content {
+        background-position: center;
+        background-size: 220%;
+        margin-top: 20%;
+    }
+    .modal-body {
+        padding-bottom: 0%;
+        
+    }
+    .modalred h1 {
+        font-size: 5rem;
+    }
+    .modalwhite h2 {
+        font-size: 6rem;
+    }
+    .databl {
+        margin-bottom: 1%!important;
+    }
+    .rightbl .dat {
+        padding-left: 0;
+    }
+    .rightbl .buybt{
+        padding-left: 8%;
+    }
+    .dat {
+        color: #fff;
+        text-align: right;
+        padding-right: 5%;
+        font-family: "Helv";
+        font-size: 1.5rem;
+    }
+    .dat p {
+        line-height: 210%;
+    }
+    .gor {
+        color: #fff;
+        text-align: left;
+        font-family: "Helv";
+        font-size: 2rem;
+        padding-left: 5%;
+    }
+    .buybt {
+        width: 22%;
+        height: 10%;
+        color: #fff;
+        font-family: "Helv";
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .buybt:hover {
+        color: #f9251c;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .buybt a {
+        color: #fff;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+    }
+    .modal-header .close {
+        font-size: 8rem;
+        margin-right: 1%;
+    }
+    .cit p {
+        font-size: 2.5rem;
+    }
+    .headin {
+        width: 40%;
+        margin: 0 auto;
+        height: 115px;
+        background-color: rgba(0, 0, 0, 0.25);
+        display: none;
+    }
+    .headin .in {
+        width: 40%;
+        height: 100%;
+        background-image: url(../img/text3.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        margin: 0 auto;
+    }
+    .bl-1 .bt {
+        width: 100%;
+        height: 3%;
+        text-align: center;
+        letter-spacing: 2px;
+        display: none;
+    }
+    .socbl {
+        width: 75%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .sc {
+        margin-left: 10%;
+    }
+    .soc {
+        width: 12%;
+        height: 100%;
+        margin-right: 3%;
+        float: left;
+        padding-bottom: 8%;
+    }
+    .soc .fa {
+        font-size: 4.5rem;
+        position: relative;
+        color: #f0f0f0;
+        text-decoration: none;
+        transition: 0.2s linear;
+    }
+    .citybl {
+        top: 127%;
+        padding: 3% 2.5%;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 55%;
+        float: right;
+    }
+    .logo {
+        bottom: -70%;
+    }
+    .bt a {
+        padding: 10px 15px;
+        margin-right: -3%;
+    }
+    .social {
+        position: relative;
+        bottom: -1%;
+    }
+    .bt {
+        position: absolute;
+        bottom: 8%;
+    }
+    .modal-dialog {
+        margin: 0;
+    }
+    .modal-content {
+        background-size: 410%;
+        background-position: left;
+    }
+    .rightbl {
+        border: none;
+        padding-left: 20%;
+    }
+    .rightbl .buybt {
+        padding-left: 3%;
+    }
+    .left {
+        padding-right: 20%;
+    }
+    .mobbt {
+        position: relative;
+        display: block;
+        margin-top: -5%;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+    .social {
+        display: none;
+    }
+    .sociall {
+        display: block;
+        margin-top: 5%;
+    }
+    .btno {
+        font-size: 1.5rem;
+    }
+    .soldout {
+        left: 5%;
+    }
+}
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px) {
+    .bl-1 {
+        background-size: 120%;
+    }
+    .citybl {
+        margin-top: 15%;
+    }
+    .cit p {
+        font-size: 0.8rem;
+    }
+    .texttour {
+        font-size: 0.9rem;
+    }
+    .lgbl {
+        top: 0%;
+    }
+    .dat {
+        font-size: 1rem;
+    }
+    .gor {
+        font-size: 1.5rem;
+    }
+    .btno {
+        font-size: 1rem;
+    }
+    .buybt {
+        font-size: 1.2rem;
+    }
+    .soldout a{
+        font-size: 0.8rem;
+    }
+    .bt {
+       position: absolute;
+        bottom: 10%;
+    }
+}
+
+
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+/*
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .cit p {
+        font-size: 1rem;
+    }
+    .texttour {
+        font-size: 0.9rem;
+    }
+    .lgbl {
+        top: 0%;
+    }
+    .dat {
+        font-size: 1rem;
+    }
+    .gor {
+        font-size: 1.5rem;
+    }
+    .btno {
+        font-size: 1rem;
+    }
+    .buybt {
+        font-size: 1.2rem;
+    }
+    .soldout a{
+        font-size: 0.8rem;
+    }
+}
+*/
+
+/* iPads (landscape) ----------- */
+/*
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
+  .cit p {
+        font-size: 1rem;
+    }
+    .texttour {
+        font-size: 0.9rem;
+    }
+    .lgbl {
+        top: 0%;
+    }
+    .dat {
+        font-size: 1rem;
+    }
+    .gor {
+        font-size: 1.5rem;
+    }
+    .btno {
+        font-size: 1rem;
+    }
+    .buybt {
+        font-size: 1.2rem;
+    }
+    .soldout a{
+        font-size: 0.8rem;
+    }
+}
+*/
+
+/* iPads (portrait) ----------- */
+/*
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+  .cit p {
+        font-size: 1rem;
+    }
+    .texttour {
+        font-size: 0.9rem;
+    }
+    .lgbl {
+        top: 0%;
+    }
+    .dat {
+        font-size: 1rem;
+    }
+    .gor {
+        font-size: 1.5rem;
+    }
+    .btno {
+        font-size: 1rem;
+    }
+    .buybt {
+        font-size: 1.2rem;
+    }
+    .soldout a{
+        font-size: 0.8rem;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
